@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v1
 
       - name: Composer install
-        run: /usr/bin/php8.0 /usr/local/bin/composer install --prefer-dist
+        run: /usr/bin/php8.0 /usr/bin/composer install --prefer-dist
 
       - name: Run PHPUnit (7.4)
         run: php7.4 vendor/bin/phpunit
